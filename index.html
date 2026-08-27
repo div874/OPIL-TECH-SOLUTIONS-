@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OPIL Tech Solutions - Expert business consultancy, website development, brand identity, and automation. Drive growth and scale your business with custom digital solutions.">
+    <title>OPIL Tech Solutions | Consultancy Built to Grow Your Business</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <!-- Navigation Header -->
+    <header class="main-header transparent-top">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <!-- Inline SVG Logo recreating the brand asset -->
+                <img src="assets/logo.png" alt="OPIL Logo" class="logo-image">
+            </a>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#process" class="nav-link">Our Process</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="tel:+919372830269" class="phone-link"><i class="fa-solid fa-phone"></i> +91 93728 30269</a>
+                <a href="#contact" class="btn btn-primary">Book Consultation</a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#process" class="mobile-nav-link">Our Process</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li class="mobile-nav-cta">
+                <a href="tel:+919372830269" class="phone-link"><i class="fa-solid fa-phone"></i> +91 93728 30269</a>
+            </li>
+            <li class="mobile-nav-cta">
+                <a href="#contact" class="btn btn-primary">Book Consultation</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background-color: #0b0c10; min-height: 92vh; padding: 40px 0;">
+        <div id="prism-container"
+            style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden;"></div>
+
+        <div class="container hero-banner-container"
+            style="position: relative; z-index: 1; text-align: center; max-width: 800px; padding-top: 140px; padding-bottom: 60px; display: block; margin: 0 auto;">
+            <div class="hero-banner-content" style="align-items: center;">
+                <h1 class="hero-title" style="color: white; font-size: clamp(40px, 6vw, 72px); text-align: center;">
+                    Grow<br>Every Part of<br>Your Business</h1>
+                <p class="hero-subtitle"
+                    style="color: #cbd5e1; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.2rem;">
+                    From lead generation to web development, brand identity to business automation — we partner with you
+                    across five specialist areas to deliver real, measurable results.</p>
+                <div class="hero-actions" style="justify-content: center; margin-top: 30px;">
+                    <a href="#contact" class="btn btn-primary btn-large">Book a Free Consultation <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal-up delay-100">
+                    <h2 class="stat-number" data-target="500">500+</h2>
+                    <p class="stat-label">Projects Delivered</p>
+                </div>
+                <div class="stat-card reveal-up delay-200">
+                    <h2 class="stat-number" data-target="98">98%</h2>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+                <div class="stat-card reveal-up delay-300">
+                    <h2 class="stat-number" data-target="21">21</h2>
+                    <p class="stat-label">Specialist Services</p>
+                </div>
+                <div class="stat-card reveal-up delay-400">
+                    <h2 class="stat-number" data-target="7">7+</h2>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Spread Section -->
+    <section id="services" class="card-spread-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">WHAT WE DO</span>
+                <h2 class="section-title reveal-up">Five Specialist Service Areas</h2>
+            </div>
+
+            <div class="card-spread-wrapper" id="card-spread">
+                <!-- Card 1 — Marketing -->
+                <div class="spread-card" data-index="0" onclick="window.location.href='marketing.html'"
+                    style="cursor: pointer;">
+                    <div class="spread-card-inner">
+                        <span class="spread-card-num">01</span>
+                        <div class="spread-card-icon" style="color:#FF6A00;">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3>Marketing &amp; Lead Generation</h3>
+                        <p>Paid Ads · SEO · Landing Pages · Lead Automation · Help Center</p>
+                        <span class="spread-card-tag" style="background:#FF6A00;">5 Services</span>
+                    </div>
+                </div>
+                <!-- Card 2 — Website -->
+                <div class="spread-card" data-index="1" onclick="window.location.href='website.html'"
+                    style="cursor: pointer;">
+                    <div class="spread-card-inner">
+                        <span class="spread-card-num">02</span>
+                        <div class="spread-card-icon" style="color:#8B5CF6;">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3>Website &amp; Digital Presence</h3>
+                        <p>Website Development · SEO Optimization · Landing Pages · Maintenance</p>
+                        <span class="spread-card-tag" style="background:#8B5CF6;">4 Services</span>
+                    </div>
+                </div>
+                <!-- Card 3 — Automation -->
+                <div class="spread-card" data-index="2" onclick="window.location.href='automation.html'"
+                    style="cursor: pointer;">
+                    <div class="spread-card-inner">
+                        <span class="spread-card-num">03</span>
+                        <div class="spread-card-icon" style="color:#00C853;">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3>Business Automation &amp; Software</h3>
+                        <p>CRM · ERP · HRMS · Custom Applications</p>
+                        <span class="spread-card-tag" style="background:#00C853;">4 Services</span>
+                    </div>
+                </div>
+                <!-- Card 4 — Branding -->
+                <div class="spread-card" data-index="3" onclick="window.location.href='branding.html'"
+                    style="cursor: pointer;">
+                    <div class="spread-card-inner">
+                        <span class="spread-card-num">04</span>
+                        <div class="spread-card-icon" style="color:#3B82F6;">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3>Branding &amp; Graphic Design</h3>
+                        <p>Logo · Brand Identity · Marketing Creatives · Social Media Design</p>
+                        <span class="spread-card-tag" style="background:#3B82F6;">4 Services</span>
+                    </div>
+                </div>
+                <!-- Card 5 — Social -->
+                <div class="spread-card" data-index="4" onclick="window.location.href='social.html'"
+                    style="cursor: pointer;">
+                    <div class="spread-card-inner">
+                        <span class="spread-card-num">05</span>
+                        <div class="spread-card-icon" style="color:#EC4899;">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Social Media Growth &amp; Management</h3>
+                        <p>Ad Campaigns · Content Management · Performance Reporting · Social Posting</p>
+                        <span class="spread-card-tag" style="background:#EC4899;">4 Services</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-spread-hint">
+                <i class="fa-solid fa-hand-pointer"></i> Hover over the cards to spread the deck
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">STRATEGY & EXECUTION</span>
+                <h2 class="section-title reveal-up">Our Growth Strategy Flow</h2>
+                <p class="section-subtitle reveal-up delay-100">How we partner with you to analyze, implement, and optimize business
+                    workflows.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step reveal-up delay-100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Free Consultation</h3>
+                        <p>We review your current challenges, marketing metrics, and software gaps to identify the
+                            highest leverage growth opportunities.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up delay-200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Strategy & Planning</h3>
+                        <p>Our specialists map out custom landing pages, automation pipelines, and branding guidelines
+                            designed for enterprise scale.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up delay-300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Build & Integration</h3>
+                        <p>We develop high-performance sites, configure robust CRM integrations, and design visuals with
+                            rapid feedback cycles.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up delay-400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Scale & Optimize</h3>
+                        <p>Continuous monitoring, reporting, and campaign optimizations to lower acquisition costs and
+                            scale systems headcount-free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-info">
+                <span class="section-tag reveal-up">COMPANY VALUES</span>
+                <h2 class="section-title reveal-up">About OPIL Tech Solutions</h2>
+                <p>OPIL Tech Solutions (formerly Onepage Info) is a high-performance technical consultancy. We believe
+                    that technology should be an asset, not a chore. By integrating marketing campaigns, performance
+                    websites, and workflow automation under one roof, we eliminate vendor friction and deliver clear,
+                    measurable outcomes for modern enterprises.</p>
+
+                <div class="about-features">
+                    <div class="about-feature-item reveal-up">
+                        <i class="fa-solid fa-check-double color-green"></i>
+                        <span><strong>No vendor friction:</strong> Design, development, and marketing managed
+                            seamlessly.</span>
+                    </div>
+                    <div class="about-feature-item reveal-up">
+                        <i class="fa-solid fa-check-double color-green"></i>
+                        <span><strong>Data-driven growth:</strong> Comprehensive analytics reporting for all
+                            channels.</span>
+                    </div>
+                    <div class="about-feature-item reveal-up">
+                        <i class="fa-solid fa-check-double color-green"></i>
+                        <span><strong>Automation first:</strong> Reducing overhead costs through smart CRM and ERP
+                            integrations.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-interactive">
+                <div class="interactive-box">
+                    <div class="box-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="box-body">
+                        <h4 class="gradient-text">Why Partners Choose Us</h4>
+                        <div class="why-item reveal-left">
+                            <span class="why-num">1</span>
+                            <div>
+                                <h5>Unified Approach</h5>
+                                <p>We don't just write code; we design conversion funnels that build sales pipelines.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-item reveal-left">
+                            <span class="why-num">2</span>
+                            <div>
+                                <h5>Transparent Pricing</h5>
+                                <p>Clean project bounds, detailed monthly reports, and ROI tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-details">
+                <span class="section-tag reveal-up">GET IN TOUCH</span>
+                <h2 class="section-title reveal-up">Let's Build Your Growth Strategy</h2>
+                <p>Talk to our team about which service area will move the needle fastest for your business — no
+                    pressure, just a clear plan.</p>
+
+                <div class="contact-methods">
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Direct Call Support</h4>
+                            <a href="tel:+919372830269" class="contact-link">+91 93728 30269</a>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Inquiries</h4>
+                            <a href="mailto:support@1page.info" class="contact-link">support@1page.info</a>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Onepage Info India Pvt. Ltd. — India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Schedule Your Free Consultation</h3>
+                <form id="consultation-form" class="consultation-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-category">Primary Interest</label>
+                        <select id="service-category" name="service" required>
+                            <option value="" disabled selected>Select a Service Area</option>
+                            <option value="marketing">01 Marketing & Lead Gen</option>
+                            <option value="website">02 Website & Digital Presence</option>
+                            <option value="automation">03 Business Automation & Software</option>
+                            <option value="branding">04 Branding & Design</option>
+                            <option value="social">05 Social Media Growth</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-details">Briefly Describe Your Requirements</label>
+                        <textarea id="message-details" name="message" rows="4"
+                            placeholder="Tell us about your project goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Consultation Request <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <!-- SVG Logo -->
+                <img src="assets/logo.png" alt="OPIL Logo" class="logo-image footer-logo">
+                <p class="footer-desc">Professional consultancy and software development for growth-minded enterprises.
+                    Delivering clean integrations, custom software, and marketing channels.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="https://www.1page.info/about">About Us</a></li>
+                    <li><a href="https://www.1page.info/career">Careers</a></li>
+                    <li><a href="https://www.1page.info/investors">Investors</a></li>
+                    <li><a href="https://www.1page.info/blog">Blog</a></li>
+                    <li><a href="https://www.1page.info/brandcenter">Brand Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://www.1page.info/help-center">Help Center</a></li>
+                    <li><a href="https://www.1page.info/contact">Contact Sales</a></li>
+                    <li><a href="https://www.1page.info/pricing">Plans & Pricing</a></li>
+                    <li><a href="https://www.1page.info/consultancy">Consultancy</a></li>
+                    <li><a href="https://www.1page.info/how-it-works">How It Works</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="https://www.1page.info/terms">Terms of Service</a></li>
+                    <li><a href="https://www.1page.info/privacy">Privacy Policy</a></li>
+                    <li><a href="https://www.1page.info/refund">Refund Policy</a></li>
+                    <li><a href="https://www.1page.info/cookies">Cookies Policy</a></li>
+                    <li><a href="https://www.1page.info/disclaimer">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Onepage info India Pvt. Ltd. — India. All rights reserved.</p>
+                <p><a href="https://www.1page.info/sitemap_pages.xml" target="_blank" class="sitemap-link"><i
+                            class="fa-solid fa-sitemap"></i> Sitemap XML</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/ogl/dist/ogl.umd.js"></script>
+    <script>
+        const { Renderer, Triangle, Program, Mesh } = window.ogl;
+
+        function initPrism(container, options = {}) {
+            const height = options.height || 3.5;
+            const baseWidth = options.baseWidth || 5.5;
+            const animationType = options.animationType || 'rotate';
+            const glow = options.glow !== undefined ? options.glow : 1;
+            const offset = options.offset || { x: 0, y: 0 };
+            const noise = options.noise !== undefined ? options.noise : 0.5;
+            const transparent = options.transparent !== undefined ? options.transparent : true;
+            const scale = options.scale || 3.6;
+            const hueShift = options.hueShift || 0;
+            const colorFrequency = options.colorFrequency || 1;
+            const hoverStrength = options.hoverStrength || 2;
+            const inertia = options.inertia || 0.05;
+            const bloom = options.bloom !== undefined ? options.bloom : 1;
+            const suspendWhenOffscreen = options.suspendWhenOffscreen || false;
+            const timeScale = options.timeScale !== undefined ? options.timeScale : 0.5;
+
+            const H = Math.max(0.001, height);
+            const BW = Math.max(0.001, baseWidth);
+            const BASE_HALF = BW * 0.5;
+            const GLOW = Math.max(0.0, glow);
+            const NOISE = Math.max(0.0, noise);
+            const offX = offset?.x ?? 0;
+            const offY = offset?.y ?? 0;
+            const SAT = transparent ? 1.5 : 1;
+            const SCALE = Math.max(0.001, scale);
+            const HUE = hueShift || 0;
+            const CFREQ = Math.max(0.0, colorFrequency || 1);
+            const BLOOM = Math.max(0.0, bloom || 1);
+            const RSX = 1;
+            const RSY = 1;
+            const RSZ = 1;
+            const TS = Math.max(0, timeScale || 1);
+            const HOVSTR = Math.max(0, hoverStrength || 1);
+            const INERT = Math.max(0, Math.min(1, inertia || 0.12));
+
+            const dpr = Math.min(2, window.devicePixelRatio || 1);
+            const renderer = new Renderer({
+                dpr,
+                alpha: transparent,
+                antialias: false
+            });
+            const gl = renderer.gl;
+            gl.disable(gl.DEPTH_TEST);
+            gl.disable(gl.CULL_FACE);
+            gl.disable(gl.BLEND);
+
+            Object.assign(gl.canvas.style, {
+                position: 'absolute',
+                inset: '0',
+                width: '100%',
+                height: '100%',
+                display: 'block'
+            });
+            container.appendChild(gl.canvas);
+
+            const vertex = `
+    attribute vec2 position;
+    void main() {
+      gl_Position = vec4(position, 0.0, 1.0);
+    }
+  `;
+
+            const fragment = `
+    precision highp float;
+
+    uniform vec2  iResolution;
+    uniform float iTime;
+
+    uniform float uHeight;
+    uniform float uBaseHalf;
+    uniform mat3  uRot;
+    uniform int   uUseBaseWobble;
+    uniform float uGlow;
+    uniform vec2  uOffsetPx;
+    uniform float uNoise;
+    uniform float uSaturation;
+    uniform float uScale;
+    uniform float uHueShift;
+    uniform float uColorFreq;
+    uniform float uBloom;
+    uniform float uCenterShift;
+    uniform float uInvBaseHalf;
+    uniform float uInvHeight;
+    uniform float uMinAxis;
+    uniform float uPxScale;
+    uniform float uTimeScale;
+
+    vec4 tanh4(vec4 x){
+      vec4 e2x = exp(2.0*x);
+      return (e2x - 1.0) / (e2x + 1.0);
+    }
+
+    float rand(vec2 co){
+      return fract(sin(dot(co, vec2(12.9898, 78.233))) * 43758.5453123);
+    }
+
+    float sdOctaAnisoInv(vec3 p){
+      vec3 q = vec3(abs(p.x) * uInvBaseHalf, abs(p.y) * uInvHeight, abs(p.z) * uInvBaseHalf);
+      float m = q.x + q.y + q.z - 1.0;
+      return m * uMinAxis * 0.5773502691896258;
+    }
+
+    float sdPyramidUpInv(vec3 p){
+      float oct = sdOctaAnisoInv(p);
+      float halfSpace = -p.y;
+      return max(oct, halfSpace);
+    }
+
+    mat3 hueRotation(float a){
+      float c = cos(a), s = sin(a);
+      mat3 W = mat3(
+        0.299, 0.587, 0.114,
+        0.299, 0.587, 0.114,
+        0.299, 0.587, 0.114
+      );
+      mat3 U = mat3(
+         0.701, -0.587, -0.114,
+        -0.299,  0.413, -0.114,
+        -0.300, -0.588,  0.886
+      );
+      mat3 V = mat3(
+         0.168, -0.331,  0.500,
+         0.328,  0.035, -0.500,
+        -0.497,  0.296,  0.201
+      );
+      return W + U * c + V * s;
+    }
+
+    void main(){
+      vec2 f = (gl_FragCoord.xy - 0.5 * iResolution.xy - uOffsetPx) * uPxScale;
+
+      float z = 5.0;
+      float d = 0.0;
+
+      vec3 p;
+      vec4 o = vec4(0.0);
+
+      float centerShift = uCenterShift;
+      float cf = uColorFreq;
+
+      mat2 wob = mat2(1.0);
+      if (uUseBaseWobble == 1) {
+        float t = iTime * uTimeScale;
+        float c0 = cos(t + 0.0);
+        float c1 = cos(t + 33.0);
+        float c2 = cos(t + 11.0);
+        wob = mat2(c0, c1, c2, c0);
+      }
+
+      const int STEPS = 100;
+      for (int i = 0; i < STEPS; i++) {
+        p = vec3(f, z);
+        p.xz = p.xz * wob;
+        p = uRot * p;
+        vec3 q = p;
+        q.y += centerShift;
+        d = 0.1 + 0.2 * abs(sdPyramidUpInv(q));
+        z -= d;
+        o += (sin((p.y + z) * cf + vec4(0.0, 1.0, 2.0, 3.0)) + 1.0) / d;
+      }
+
+      o = tanh4(o * o * (uGlow * uBloom) / 1e5);
+
+      vec3 col = o.rgb;
+      float n = rand(gl_FragCoord.xy + vec2(iTime));
+      col += (n - 0.5) * uNoise;
+      col = clamp(col, 0.0, 1.0);
+
+      float L = dot(col, vec3(0.2126, 0.7152, 0.0722));
+      col = clamp(mix(vec3(L), col, uSaturation), 0.0, 1.0);
+
+      if(abs(uHueShift) > 0.0001){
+        col = clamp(hueRotation(uHueShift) * col, 0.0, 1.0);
+      }
+
+      gl_FragColor = vec4(col, o.a);
+    }
+  `;
+
+            const geometry = new Triangle(gl);
+            const iResBuf = new Float32Array(2);
+            const offsetPxBuf = new Float32Array(2);
+
+            const program = new Program(gl, {
+                vertex,
+                fragment,
+                uniforms: {
+                    iResolution: { value: iResBuf },
+                    iTime: { value: 0 },
+                    uHeight: { value: H },
+                    uBaseHalf: { value: BASE_HALF },
+                    uUseBaseWobble: { value: 1 },
+                    uRot: { value: new Float32Array([1, 0, 0, 0, 1, 0, 0, 0, 1]) },
+                    uGlow: { value: GLOW },
+                    uOffsetPx: { value: offsetPxBuf },
+                    uNoise: { value: NOISE },
+                    uSaturation: { value: SAT },
+                    uScale: { value: SCALE },
+                    uHueShift: { value: HUE },
+                    uColorFreq: { value: CFREQ },
+                    uBloom: { value: BLOOM },
+                    uCenterShift: { value: H * 0.25 },
+                    uInvBaseHalf: { value: 1 / BASE_HALF },
+                    uInvHeight: { value: 1 / H },
+                    uMinAxis: { value: Math.min(BASE_HALF, H) },
+                    uPxScale: {
+                        value: 1 / ((gl.drawingBufferHeight || 1) * 0.1 * SCALE)
+                    },
+                    uTimeScale: { value: TS }
+                }
+            });
+            const mesh = new Mesh(gl, { geometry, program });
+
+            const resize = () => {
+                const w = container.clientWidth || 1;
+                const h = container.clientHeight || 1;
+                renderer.setSize(w, h);
+                iResBuf[0] = gl.drawingBufferWidth;
+                iResBuf[1] = gl.drawingBufferHeight;
+                offsetPxBuf[0] = offX * dpr;
+                offsetPxBuf[1] = offY * dpr;
+                program.uniforms.uPxScale.value = 1 / ((gl.drawingBufferHeight || 1) * 0.1 * SCALE);
+            };
+            const ro = new ResizeObserver(resize);
+            ro.observe(container);
+            resize();
+
+            const rotBuf = new Float32Array(9);
+            const setMat3FromEuler = (yawY, pitchX, rollZ, out) => {
+                const cy = Math.cos(yawY), sy = Math.sin(yawY);
+                const cx = Math.cos(pitchX), sx = Math.sin(pitchX);
+                const cz = Math.cos(rollZ), sz = Math.sin(rollZ);
+                const r00 = cy * cz + sy * sx * sz;
+                const r01 = -cy * sz + sy * sx * cz;
+                const r02 = sy * cx;
+
+                const r10 = cx * sz;
+                const r11 = cx * cz;
+                const r12 = -sx;
+
+                const r20 = -sy * cz + cy * sx * sz;
+                const r21 = sy * sz + cy * sx * cz;
+                const r22 = cy * cx;
+
+                out[0] = r00; out[1] = r10; out[2] = r20;
+                out[3] = r01; out[4] = r11; out[5] = r21;
+                out[6] = r02; out[7] = r12; out[8] = r22;
+                return out;
+            };
+
+            const NOISE_IS_ZERO = NOISE < 1e-6;
+            let raf = 0;
+            const t0 = performance.now();
+
+            const startRAF = () => {
+                if (raf) return;
+                raf = requestAnimationFrame(render);
+            };
+            const stopRAF = () => {
+                if (!raf) return;
+                cancelAnimationFrame(raf);
+                raf = 0;
+            };
+
+            const rnd = () => Math.random();
+            const wX = (0.3 + rnd() * 0.6) * RSX;
+            const wY = (0.2 + rnd() * 0.7) * RSY;
+            const wZ = (0.1 + rnd() * 0.5) * RSZ;
+            const phX = rnd() * Math.PI * 2;
+            const phZ = rnd() * Math.PI * 2;
+
+            let yaw = 0, pitch = 0, roll = 0;
+            let targetYaw = 0, targetPitch = 0;
+            const lerp = (a, b, t) => a + (b - a) * t;
+
+            const pointer = { x: 0, y: 0, inside: true };
+            const onMove = e => {
+                const ww = Math.max(1, window.innerWidth);
+                const wh = Math.max(1, window.innerHeight);
+                const cx = ww * 0.5;
+                const cy = wh * 0.5;
+                const nx = (e.clientX - cx) / (ww * 0.5);
+                const ny = (e.clientY - cy) / (wh * 0.5);
+                pointer.x = Math.max(-1, Math.min(1, nx));
+                pointer.y = Math.max(-1, Math.min(1, ny));
+                pointer.inside = true;
+            };
+            const onLeave = () => { pointer.inside = false; };
+            const onBlur = () => { pointer.inside = false; };
+
+            let onPointerMove = null;
+            if (animationType === 'hover') {
+                onPointerMove = e => {
+                    onMove(e);
+                    startRAF();
+                };
+                window.addEventListener('pointermove', onPointerMove, { passive: true });
+                window.addEventListener('mouseleave', onLeave);
+                window.addEventListener('blur', onBlur);
+                program.uniforms.uUseBaseWobble.value = 0;
+            } else if (animationType === '3drotate') {
+                program.uniforms.uUseBaseWobble.value = 0;
+            } else {
+                program.uniforms.uUseBaseWobble.value = 1;
+            }
+
+            const render = t => {
+                const time = (t - t0) * 0.001;
+                program.uniforms.iTime.value = time;
+
+                let continueRAF = true;
+
+                if (animationType === 'hover') {
+                    const maxPitch = 0.6 * HOVSTR;
+                    const maxYaw = 0.6 * HOVSTR;
+                    targetYaw = (pointer.inside ? -pointer.x : 0) * maxYaw;
+                    targetPitch = (pointer.inside ? pointer.y : 0) * maxPitch;
+                    const prevYaw = yaw;
+                    const prevPitch = pitch;
+                    const prevRoll = roll;
+                    yaw = lerp(prevYaw, targetYaw, INERT);
+                    pitch = lerp(prevPitch, targetPitch, INERT);
+                    roll = lerp(prevRoll, 0, 0.1);
+                    program.uniforms.uRot.value = setMat3FromEuler(yaw, pitch, roll, rotBuf);
+
+                    if (NOISE_IS_ZERO) {
+                        const settled = Math.abs(yaw - targetYaw) < 1e-4 && Math.abs(pitch - targetPitch) < 1e-4 && Math.abs(roll) < 1e-4;
+                        if (settled) continueRAF = false;
+                    }
+                } else if (animationType === '3drotate') {
+                    const tScaled = time * TS;
+                    yaw = tScaled * wY;
+                    pitch = Math.sin(tScaled * wX + phX) * 0.6;
+                    roll = Math.sin(tScaled * wZ + phZ) * 0.5;
+                    program.uniforms.uRot.value = setMat3FromEuler(yaw, pitch, roll, rotBuf);
+                    if (TS < 1e-6) continueRAF = false;
+                } else {
+                    rotBuf[0] = 1; rotBuf[1] = 0; rotBuf[2] = 0;
+                    rotBuf[3] = 0; rotBuf[4] = 1; rotBuf[5] = 0;
+                    rotBuf[6] = 0; rotBuf[7] = 0; rotBuf[8] = 1;
+                    program.uniforms.uRot.value = rotBuf;
+                    if (TS < 1e-6) continueRAF = false;
+                }
+
+                renderer.render({ scene: mesh });
+                if (continueRAF) {
+                    raf = requestAnimationFrame(render);
+                } else {
+                    raf = 0;
+                }
+            };
+
+            if (suspendWhenOffscreen) {
+                const io = new IntersectionObserver(entries => {
+                    const vis = entries.some(e => e.isIntersecting);
+                    if (vis) startRAF();
+                    else stopRAF();
+                });
+                io.observe(container);
+                startRAF();
+                container.__prismIO = io;
+            } else {
+                startRAF();
+            }
+
+            return () => {
+                stopRAF();
+                ro.disconnect();
+                if (animationType === 'hover') {
+                    if (onPointerMove) window.removeEventListener('pointermove', onPointerMove);
+                    window.removeEventListener('mouseleave', onLeave);
+                    window.removeEventListener('blur', onBlur);
+                }
+                if (suspendWhenOffscreen) {
+                    const io = container.__prismIO;
+                    if (io) io.disconnect();
+                    delete container.__prismIO;
+                }
+                if (gl.canvas.parentElement === container) container.removeChild(gl.canvas);
+            };
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('prism-container');
+            if (container) {
+                initPrism(container, {
+                    animationType: "3drotate",
+                    timeScale: 0.6,
+                    height: 2.5,
+                    baseWidth: 5.5,
+                    scale: 6.0,
+                    hueShift: -0.1,
+                    colorFrequency: 2.0,
+                    noise: 0,
+                    glow: 0.9,
+                    bloom: 1.2,
+                    transparent: true,
+                    suspendWhenOffscreen: true
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
