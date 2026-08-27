@@ -196,7 +196,8 @@ class ScrollStack {
 document.addEventListener('DOMContentLoaded', () => {
     // Slight delay to ensure layout is fully painted before caching offsets
     setTimeout(() => {
-        if (document.querySelector('.scroll-stack-scroller')) {
+        // Only run ScrollStack on desktop — on mobile let CSS handle the layout
+        if (document.querySelector('.scroll-stack-scroller') && window.innerWidth > 768) {
             new ScrollStack({
                 itemDistance: 100,
                 itemScale: 0.03,
