@@ -1900,7 +1900,7 @@ a {
 /* --- Comprehensive Mobile Patch --- */
 @media (max-width: 768px) {
     /* Prevent horizontal scrolling globally */
-    body, html {
+    body {
         overflow-x: hidden;
         width: 100%;
     }
