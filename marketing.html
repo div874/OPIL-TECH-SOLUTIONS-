@@ -27,7 +27,16 @@
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="index.html#about" class="nav-link">About Us</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="marketing.html">Marketing & Lead Gen</a></li>
+                            <li><a href="website.html">Website & Funnels</a></li>
+                            <li><a href="automation.html">Business Automation</a></li>
+                            <li><a href="branding.html">Brand Identity</a></li>
+                            <li><a href="social.html">Social Media</a></li>
+                        </ul>
+                    </li>
                     <li><a href="index.html#process" class="nav-link">Our Process</a></li>
                     <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -47,7 +56,16 @@
         <ul class="mobile-nav-links">
             <li><a href="index.html" class="mobile-nav-link">Home</a></li>
             <li><a href="index.html#about" class="mobile-nav-link">About Us</a></li>
-            <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+            <li class="mobile-dropdown">
+                <a href="javascript:void(0)" class="mobile-nav-link" onclick="this.nextElementSibling.classList.toggle('show')">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="marketing.html" class="mobile-nav-link">Marketing & Lead Gen</a></li>
+                    <li><a href="website.html" class="mobile-nav-link">Website & Funnels</a></li>
+                    <li><a href="automation.html" class="mobile-nav-link">Business Automation</a></li>
+                    <li><a href="branding.html" class="mobile-nav-link">Brand Identity</a></li>
+                    <li><a href="social.html" class="mobile-nav-link">Social Media</a></li>
+                </ul>
+            </li>
             <li><a href="index.html#process" class="mobile-nav-link">Our Process</a></li>
             <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
             <li class="mobile-nav-cta">
