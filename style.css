@@ -1825,13 +1825,14 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 10px 0;
-    min-width: 220px;
+    min-width: 250px;
     list-style: none;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     z-index: 1000;
+    display: block !important;
 }
 
 .transparent-top .dropdown-menu {
